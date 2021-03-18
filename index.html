@@ -1,0 +1,109 @@
+<!-- 
+'***********************   Jewel Mahmud   ***********************************'
+'***********************  CSE-13th,MBSTU  ***********************************'
+'*********************** Date: 118-03-2021 ***********************************'
+'************* Title: Making complete portfolio *****************************'
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book List</title>
+	<style>
+		*{
+			padding: 0;
+			margin-left: 0;
+		}
+		.row{
+			height: auto;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			background-color: #d6d6c2;
+		}
+		.row-item{
+		}
+		h1{
+			color: #004d38;
+		}
+		.same{
+			display: flex;
+			margin: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+		input{
+			height: 30px;
+			width: 300px;
+			margin-left: 30px;
+			padding-left: 10px;
+			border-radius: 10px
+		}
+		button{
+			padding: 10px;
+			border-radius: 10px;
+		}
+		table{
+			background-color: #e6b3cc;
+			height: auto;
+			width: 900px;
+			text-align: center;
+			border-radius: 20px;
+			padding: 20px;
+			margin:20px;
+
+			
+		}
+		.book-list:nth-child(odd){
+			background-color: red;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div class="row">
+		<div class="row-item">
+			<h1 class="same">Book List</h1>
+			<div class="same">
+				<h3>Title: </h3>
+				<input type="text" id="title">
+
+			</div>
+			<div class="same">
+				<h3>Author: </h3>
+				<input type="text" id="author">
+				
+			</div>
+
+			<div class="same">
+				<h3>Year: </h3>
+				<input type="text" name="" id="year">
+				
+			</div>
+
+			<div class="same">
+				<button class="btn">Add Book Item</button>
+			</div>
+
+			<table class="data">
+				<thead>
+				<tr class="">
+					<th><u> Title</u></th>
+					<th><u>Author</u></th>
+					<th><u>Year</u></th>
+				</tr>
+				</thead>
+
+				<tbody class="book-list">
+					
+				</tbody>
+
+			</table>
+			
+		</div>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+</html>
