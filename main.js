@@ -40,14 +40,13 @@ btn.addEventListener('click', function(e){
 		newrow.appendChild(newYear);
 
 		book_list.appendChild(newrow);
-		console.log(newrow);
+		
+		//Clear the input
+		title.value = '';
+		author.value = '';
+		year.value = '';
 
 	}
-
-	if(temp%2==0)
-	{
-	}
-	temp++;
 
 	
 });
